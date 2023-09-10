@@ -1,5 +1,10 @@
-import logo from './logo.svg';
+//hoja con estilos
 import './App.css';
+//paquetes-modulos
+
+//componentes
+import logo from './logo.svg';
+
 
 function App() {
   return (
