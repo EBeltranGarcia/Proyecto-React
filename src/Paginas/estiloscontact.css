@@ -1,0 +1,45 @@
+#caja-formulario {
+    padding-bottom: 15px;
+    position: absolute;
+    left: 200px;
+    top: 185px;
+}
+h3 {
+    font-weight: 500;
+    font-size: 30px;
+}
+form {
+    font-size: 20px;
+    color: rgb(38, 52, 70);
+    background-color: rgba(92, 121, 151, 0.884);
+    width: 1000px;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+#contenedor-nombreyemail {
+    display: flex;
+    gap: 15px;
+}
+input {
+    margin-top: 5px;
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border-style: none;
+}
+textarea {
+    margin-top: 5px;
+    width: 600px;
+    height: 300px;
+    border-radius: 5px;
+    resize: none;
+}
+#boton-enviar {
+    background-color: rgb(52, 77, 103);
+    color: white;
+    font-size: 20px;
+    width: 100px;
+}

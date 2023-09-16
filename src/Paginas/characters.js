@@ -1,14 +1,16 @@
 //hoja con estilos
-
+import "./estiloscharacters.css"
 //paquetes-modulos
 
 //componentes
+import Navegacion from "../Componentes/navegacion";
 
 function Characters() {
     return(
-            <nav>
-
-            </nav>
+            <div>
+                <Navegacion/>
+                <h2>Informacion pagina personajes</h2>
+            </div>
     )
 }
 

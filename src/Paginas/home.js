@@ -7,6 +7,7 @@ import './estiloshome.css';
 
 
 function Home() {
+    
     return(
             <div className='div-container'>
                 <h1>Proyect Rick & Morty</h1>

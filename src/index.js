@@ -1,14 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Home from './Paginas/home';
+//import Home from './Paginas/home';
 import reportWebVitals from './reportWebVitals';
 
+//import Characters from './Paginas/characters';
+import Contacto from './Paginas/contact';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Home />
+    <Contacto />
   </React.StrictMode>
 );
 

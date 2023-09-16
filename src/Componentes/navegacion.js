@@ -1,19 +1,20 @@
 //hoja con estilos
-
+import "./estilosnavegacion.css"
 //paquetes-modulos
 
 //componentes
 
+
 function Navegacion () {
     return(
         <nav>
-            <h2>
-                Rick & Morty
-            </h2>
-            <ul>
-                <li>Characters</li>
-                <li>Contact</li>
-            </ul>
+            <div id="titulo-home">
+                <h2>Rick & Morty</h2>
+            </div>
+            <div>    
+                <a>Characters</a>
+                <a>contact</a>
+            </div>
         </nav>
     )
 }
