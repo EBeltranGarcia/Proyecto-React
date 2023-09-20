@@ -3,7 +3,7 @@
   font-family: 'Raleway', sans-serif;
 }
 body {
-  background-image: url(/public/Imagen-fondo.jpeg);
+  background-image: url(/public/imagen-fondo.jpeg);
   background-size: cover;
   background-position: top center;
   background-attachment: fixed;

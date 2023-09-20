@@ -4,13 +4,13 @@ import './index.css';
 //import Home from './Paginas/home';
 import reportWebVitals from './reportWebVitals';
 
-//import Characters from './Paginas/characters';
-import Contacto from './Paginas/contact';
+import Characters from './Paginas/characters';
+//import Contacto from './Paginas/contact';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Contacto />
+    <Characters />
   </React.StrictMode>
 );
 

@@ -1,0 +1,32 @@
+#contenedor-tarjetas {
+    margin: 2px;
+    width: 320px;
+    height: 400px;
+    background-color: rgb(21, 41, 65);
+    color: rgb(59, 109, 161);
+    border-radius: 10px;
+}
+img {
+    position: relative;
+    left: 10px;
+    top: 8px;
+}
+h3 {
+    color: rgb(110, 204, 175);
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: 7px;
+    text-align: center;
+}
+button {
+    background-color: rgb(110, 204, 175);
+    color: rgb(52, 77, 103);
+    width: 100px;
+    height: 40px;
+    border-radius: 3px;
+    border: none;
+    margin-top: 5px;
+    font-size: 16px;
+    position: relative;
+    left: 210px;
+}
