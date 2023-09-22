@@ -10,7 +10,7 @@ function Contacto() {
         <div>
             <Navegacion />
             <div id= "caja-formulario">
-                <form action="" method="post">
+                <form action="https://formspree.io/f/xknlqpld" method="post">
                     <h3>Contact</h3>
                     <h3>Leave us your information so we can contact you</h3>
                     <div id="contenedor-nombreyemail">
