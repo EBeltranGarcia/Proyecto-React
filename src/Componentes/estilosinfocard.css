@@ -1,0 +1,37 @@
+#contenedor-infocards {
+    position: absolute;
+    width: 290px;
+    left: 330px;
+    bottom: 92px;
+    color: white;
+}
+h3 {
+    margin-top: 5px;
+}
+li {
+    list-style: none;
+    font-weight: 700;
+    padding: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.24);
+    
+}
+li:first-child {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+li:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+li:hover {
+    background-color: rgb(110, 204, 175);
+    color: rgb(21, 41, 65);
+}
+#boton-infocard {
+    left: 240px;
+    width: 50px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}   

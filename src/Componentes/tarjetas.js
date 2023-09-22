@@ -1,18 +1,25 @@
 //hoja con estilos
 import "./estilostarjetas.css"
 //paquetes-modulos
-
+import { useState } from "react";
 //componentes
 import Infocards from "./infocard";
 
 function Tarjeta({infoPersonaje}) {
-    console.log(infoPersonaje)
+    //console.log(infoPersonaje)
+    
+    const [mostrar, setMostrar]=useState(false);
+
+    const mostrarLista=() => {
+        setMostrar(true)
+    }
+    
     return (
-        <div id="contenedor-tarjetas">
+        <div className={mostrar === true? "contenedor-tarjetas2":"contenedor-tarjetas"}>
             <img src={infoPersonaje.image} alt="Imagen-personaje"/>
-            <h3>{infoPersonaje.name}</h3>
-            <button>Know More...</button>
-            <Infocards estado={infoPersonaje.status} especie={infoPersonaje.species} origen={infoPersonaje.origin.name} genero={infoPersonaje.gender} />
+            <h3 className={mostrar === true? "texto-abierto":"texto-cerrado"}>{infoPersonaje.name}</h3>
+            <button className={mostrar === true? "boton-oculto":"boton-visible"} onClick={mostrarLista}>Know More...</button>
+            {mostrar === true? <Infocards estado={infoPersonaje.status} especie={infoPersonaje.species} origen={infoPersonaje.origin.name} genero={infoPersonaje.gender} setMostrar={setMostrar}/>:""}
         </div>
     )
 }

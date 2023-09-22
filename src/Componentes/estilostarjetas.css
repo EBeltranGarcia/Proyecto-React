@@ -1,9 +1,16 @@
-#contenedor-tarjetas {
+.contenedor-tarjetas {
     margin: 2px;
     width: 320px;
+    height: fit-content;
+    padding-bottom: 8px;
+    background-color: rgb(21, 41, 65);
+    border-radius: 10px;
+}
+.contenedor-tarjetas2 {
+    position: relative;
+    width: 640px;
     height: 400px;
     background-color: rgb(21, 41, 65);
-    color: rgb(59, 109, 161);
     border-radius: 10px;
 }
 img {
@@ -11,11 +18,18 @@ img {
     left: 10px;
     top: 8px;
 }
-h3 {
+.texto-cerrado {
     color: rgb(110, 204, 175);
     font-weight: 500;
     font-size: 30px;
     margin-top: 7px;
+    text-align: center;
+}
+.texto-abierto {
+    color: rgb(110, 204, 175);
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: 25px;
     text-align: center;
 }
 button {
@@ -29,4 +43,10 @@ button {
     font-size: 16px;
     position: relative;
     left: 210px;
+}
+.boton-oculto {
+    display: none;
+}
+.boton-visible {
+    display: block;
 }
