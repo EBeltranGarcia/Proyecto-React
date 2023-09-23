@@ -5,6 +5,7 @@ import {useState, useEffect} from "react";
 //componentes
 import Navegacion from "../Componentes/navegacion";
 import Tarjeta from "../Componentes/tarjetas";
+import Filters from "../Componentes/filters";
 
 function Characters() {
 
@@ -37,7 +38,7 @@ function Characters() {
                 <Navegacion/>
                 <div>
                     <h2>Informacion pagina personajes</h2>
-                    <p>Filtros</p>
+                    <Filters/>
                 </div>
                 <section>
                     {personajes.map((personaje)=> { return <Tarjeta key={personaje.id} infoPersonaje={personaje}/>})}
