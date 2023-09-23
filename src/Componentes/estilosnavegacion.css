@@ -5,10 +5,13 @@
 nav {
     background-color: rgb(52, 77, 103);
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     height: 160px;
     padding: 0 30px;
+}
+#titulos-navegacion {
+    display: flex;
 }
 h2 {
     font-weight: 500;
@@ -18,12 +21,13 @@ h2 {
     color:rgb(110, 204, 175);
     margin-left: 100px;
 }
-a {
+p {
+    text-align: center;
     padding: 15px;
     margin-left: 20px;
     color: rgb(110, 204, 175);
 }
-a:hover {
+p:hover {
     background-color: rgb(110, 204, 175);
     border-radius: 5px;
     color: rgb(52, 77, 103);
