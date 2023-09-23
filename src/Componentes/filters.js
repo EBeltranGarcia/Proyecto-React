@@ -5,10 +5,11 @@ import "./estilosfilters.css"
 //componentes
 
 
-function Filters() {
+function Filters({nombreFiltros}) {
     return(
-        <div>
-            <p>loreasffaafasfafs</p>
+        <div className="form-check form-switch">
+            <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
+            <label className="form-check-label" htmlFor="flexSwitchCheckDefault">{nombreFiltros}</label>
         </div>
     )
 }

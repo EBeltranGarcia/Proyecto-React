@@ -13,7 +13,7 @@ function Infocards({estado, especie, origen, genero, setMostrar}) {
                 <button id="boton-infocard" onClick={()=> setMostrar(false)}>x</button>
             </div>
             <ul>
-                <li>Character Status {estado}</li>
+                <li id="contenedor-status">Character Status {estado}</li>
                 <li>
                     <h4>Species</h4>
                     <p>{especie}</p>

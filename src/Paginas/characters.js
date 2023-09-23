@@ -9,6 +9,8 @@ import Filters from "../Componentes/filters";
 
 function Characters() {
 
+    const listaFiltros = ["Character Alive", "Character Dead", "Female", "Male", "Origin Unknown"]
+
     let [personajes,setPersonajes]=useState([]);
 
     let traerPersonajes= async() => {
@@ -38,7 +40,7 @@ function Characters() {
                 <Navegacion/>
                 <div>
                     <h2>Informacion pagina personajes</h2>
-                    <Filters/>
+                    {listaFiltros.map((filtro)=>{ return <Filters nombreFiltros={filtro} />})}
                 </div>
                 <section>
                     {personajes.map((personaje)=> { return <Tarjeta key={personaje.id} infoPersonaje={personaje}/>})}
