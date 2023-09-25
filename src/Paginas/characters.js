@@ -9,9 +9,30 @@ import Filters from "../Componentes/filters";
 
 function Characters() {
 
-    const listaFiltros = ["Character Alive", "Character Dead", "Female", "Male", "Origin Unknown"]
+    let [listaCompleta, setListaCompleta]=useState([]);
 
     let [personajes,setPersonajes]=useState([]);
+
+    let [filtrosAplicados, setFiltrosAplicados]=useState([]);
+
+    const listaFiltros = [
+        {
+        nombre: "Alive",
+        filtro: "Character Alive"
+    }, {
+        nombre: "Dead",
+        filtro: "Character Dead"
+    }, {
+        nombre: "Female",
+        filtro: "Female"
+    }, {
+        nombre: "Male",
+        filtro: "Male"
+    }, {
+        nombre: "unknown",
+        filtro: "Origin Unknown"
+    }
+    ];
 
     let traerPersonajes= async() => {
         let dato= await fetch("https://rickandmortyapi.com/api/character")
@@ -21,6 +42,30 @@ function Characters() {
         return dato
     };
 
+    let aplicarFiltros=(event) => {
+
+        let nombreCheckbox= event.target.id;
+
+        if (event.target.checked === true) {
+
+            setFiltrosAplicados([...filtrosAplicados, nombreCheckbox])
+
+        }
+        else {
+
+            let filtrosRestantes= filtrosAplicados.filter((el)=> el !== nombreCheckbox)
+            
+            setFiltrosAplicados(filtrosRestantes)
+            
+            setPersonajes(listaCompleta)
+            }
+            
+            console.log(personajes)
+            
+        }
+        //console.log(event.target.id)
+        //console.dir(event.target.checked)
+
     useEffect(()=> {
 
         let guardarPersonajes= async() => {
@@ -29,18 +74,44 @@ function Characters() {
         let listaPersonajes= info.results;
 
         setPersonajes(listaPersonajes)
-        
+
+        setListaCompleta(listaPersonajes)
     };
 
         guardarPersonajes();
+
     },[])
+
+    useEffect(()=>{
+
+        filtrosAplicados.forEach((filtroNombre)=> {
+
+            let resultado;
+    
+            if (filtroNombre === "Alive" || filtroNombre === "Dead") {
+                resultado= personajes.filter((personaje)=> personaje.status === filtroNombre) 
+                console.log(resultado)
+            }
+            if (filtroNombre === "Female" || filtroNombre === "Male") {
+                resultado= personajes.filter((personaje)=> personaje.gender === filtroNombre) 
+                console.log(resultado)
+            }
+            if (filtroNombre === "unknown") {
+                resultado= personajes.filter((personaje)=> personaje.origin.name === filtroNombre) 
+                console.log(resultado)
+            }
+            setPersonajes(resultado)
+        })
+    },[filtrosAplicados])
 
     return(
             <div>
                 <Navegacion/>
                 <div>
-                    <h2>Informacion pagina personajes</h2>
-                    {listaFiltros.map((filtro)=>{ return <Filters nombreFiltros={filtro} />})}
+                    <h2 id="titulo-filtros">Filters</h2>
+                    <form className="d-flex justify-content-around">
+                        {listaFiltros.map((item)=>{ return <Filters key={item.nombre} nombreFiltros={item.filtro} idFiltros={item.nombre} handlerChange={aplicarFiltros} />})}
+                    </form>
                 </div>
                 <section>
                     {personajes.map((personaje)=> { return <Tarjeta key={personaje.id} infoPersonaje={personaje}/>})}

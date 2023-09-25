@@ -12,8 +12,8 @@ function Navegacion () {
                 <h2>Rick & Morty</h2>
             </div>
             <div id="titulos-navegacion">    
-                <p>Characters</p>
-                <p>contact</p>
+                <p className="paginas-navegacion">Characters</p>
+                <p className="paginas-navegacion">contact</p>
             </div>
         </nav>
     )

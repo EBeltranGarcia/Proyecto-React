@@ -1,40 +1,47 @@
 #contenedor-infocards {
     position: absolute;
-    width: 300px;
+    width: 310px;
     left: 320px;
     bottom: 75px;
     color: white;
 }
 #contenedor-status {
     padding: 10px;
+    list-style: none;
+    font-weight: 700;
 }
-h4 {
+.titulos-h4 {
     font-weight: 400;
     margin: 3px;
 }
-p {
+.informacion-estados {
     margin: 5px;
 }
-li {
+.contenedor-listas {
     list-style: none;
     font-weight: 700;
     padding: 2px;
     border: 1px solid rgba(128, 128, 128, 0.24);
 }
-li:first-child {
+#contenedor-status {
+    border: 1px solid rgba(128, 128, 128, 0.24);
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
+}
+.contenedor-listas:hover {
+    background-color: rgb(110, 204, 175);
+    color: rgb(52, 77, 103);
+}
+#contenedor-status:hover {
+    background-color: rgb(110, 204, 175);
+    color: rgb(52, 77, 103);
 }
 li:last-child {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
-li:hover {
-    background-color: rgb(110, 204, 175);
-    color: rgb(21, 41, 65);
-}
 #boton-infocard {
-    left: 250px;
+    left: 260px;
     bottom: 10px;
     width: 50px;
     height: 30px;

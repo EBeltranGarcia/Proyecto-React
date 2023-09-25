@@ -4,3 +4,7 @@ section {
     flex-wrap: wrap;
     gap: 18px;
 }
+#titulo-filtros {
+    font-size: 30px;
+    margin: 20px;
+}

@@ -14,17 +14,17 @@ function Infocards({estado, especie, origen, genero, setMostrar}) {
             </div>
             <ul>
                 <li id="contenedor-status">Character Status {estado}</li>
-                <li>
-                    <h4>Species</h4>
-                    <p>{especie}</p>
+                <li className="contenedor-listas">
+                    <h4 className="titulos-h4">Species</h4>
+                    <p className="informacion-estados">{especie}</p>
                 </li>
-                <li>
-                    <h4>Origin</h4> 
-                    <p>{origen}</p>
+                <li className="contenedor-listas">
+                    <h4 className="titulos-h4">Origin</h4> 
+                    <p className="informacion-estados">{origen}</p>
                 </li>
-                <li>
-                    <h4>Gender</h4> 
-                    <p>{genero}</p>
+                <li className="contenedor-listas">
+                    <h4 className="titulos-h4">Gender</h4> 
+                    <p className="informacion-estados">{genero}</p>
                 </li>
             </ul>
         </div>
