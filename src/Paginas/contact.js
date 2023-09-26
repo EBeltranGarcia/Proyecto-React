@@ -5,14 +5,14 @@ import "./estiloscontact.css"
 //componentes
 import Navegacion from "../Componentes/navegacion";
 
-function Contacto() {
+function Contact() {
     return (
         <div>
             <Navegacion />
-            <div id= "caja-formulario">
-                <form action="https://formspree.io/f/xknlqpld" method="post">
-                    <h3>Contact</h3>
-                    <h3>Leave us your information so we can contact you</h3>
+            <div id= "contenedor-formulario">
+                <form className="caja-formulario" action="https://formspree.io/f/xknlqpld" method="post">
+                    <h3 className="titulos-formulario">Contact</h3>
+                    <h3 className="titulos-formulario">Leave us your information so we can contact you</h3>
                     <div id="contenedor-nombreyemail">
                         <div>
                             <label htmlFor="nombre">Name</label>
@@ -26,15 +26,15 @@ function Contacto() {
                         </div>
                     </div>
                     <div>
-                        <label htmlFor="texto-informacion">Messege</label>
+                        <label htmlFor="texto-informacion">Message</label>
                         <br/>
                         <textarea name="texto-informacion" id="texto-informacion"/>
                     </div>
-                    <input id= "boton-enviar"type="submit" value="Enviar"/>
+                    <input id= "boton-enviar"type="submit" value="Send"/>
                 </form>
             </div>    
         </div>
     )
 }
 
-export default Contacto;
+export default Contact;

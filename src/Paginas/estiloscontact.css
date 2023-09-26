@@ -1,14 +1,14 @@
-#caja-formulario {
-    padding-bottom: 15px;
-    position: absolute;
-    left: 200px;
-    top: 185px;
+#contenedor-formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px 20px 0px;
 }
-h3 {
+.titulos-formulario {
     font-weight: 500;
     font-size: 30px;
 }
-form {
+.caja-formulario{
     font-size: 20px;
     color: rgb(38, 52, 70);
     background-color: rgba(92, 121, 151, 0.884);
@@ -35,7 +35,7 @@ input {
 textarea {
     margin-top: 5px;
     padding: 10px;
-    width: 600px;
+    width: 615px;
     height: 280px;
     border-radius: 5px;
     resize: none;

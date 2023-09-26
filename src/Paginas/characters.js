@@ -60,7 +60,7 @@ function Characters() {
             setPersonajes(listaCompleta)
             }
             
-            console.log(personajes)
+            //console.log(personajes)
             
         }
         //console.log(event.target.id)
@@ -90,15 +90,15 @@ function Characters() {
     
             if (filtroNombre === "Alive" || filtroNombre === "Dead") {
                 resultado= personajes.filter((personaje)=> personaje.status === filtroNombre) 
-                console.log(resultado)
+                //console.log(resultado)
             }
             if (filtroNombre === "Female" || filtroNombre === "Male") {
                 resultado= personajes.filter((personaje)=> personaje.gender === filtroNombre) 
-                console.log(resultado)
+                //console.log(resultado)
             }
             if (filtroNombre === "unknown") {
                 resultado= personajes.filter((personaje)=> personaje.origin.name === filtroNombre) 
-                console.log(resultado)
+                //console.log(resultado)
             }
             setPersonajes(resultado)
         })
@@ -109,12 +109,18 @@ function Characters() {
                 <Navegacion/>
                 <div>
                     <h2 id="titulo-filtros">Filters</h2>
-                    <form className="d-flex justify-content-around">
+                    <form className="d-flex justify-content-around flex-wrap">
                         {listaFiltros.map((item)=>{ return <Filters key={item.nombre} nombreFiltros={item.filtro} idFiltros={item.nombre} handlerChange={aplicarFiltros} />})}
                     </form>
                 </div>
                 <section>
-                    {personajes.map((personaje)=> { return <Tarjeta key={personaje.id} infoPersonaje={personaje}/>})}
+                    {personajes.length > 0 ? personajes.map((personaje)=> { return <Tarjeta key={personaje.id} infoPersonaje={personaje}/>}) : 
+                    <div className="mensaje-alerta">
+                        <i class="bi bi-exclamation-triangle-fill"></i>
+                        <p>Sorry! There are no characters with all those properties.</p>
+                    </div>
+                    }
+                    
                 </section>
             </div>
     )
