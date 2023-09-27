@@ -5,14 +5,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 //componentes
-import Home from './Paginas/home';
-//import Characters from './Paginas/characters';
-//import Contact from './Paginas/contact';
+import Router from "./Componentes/router";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Home />
+    <Router />
   </React.StrictMode>
 );
 

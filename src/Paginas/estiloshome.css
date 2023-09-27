@@ -16,12 +16,16 @@
 .texto-home{
     text-align: center;
 }
-.botones {
+.botones-home {
     display: flex;
     justify-content: center;
     gap: 8px;
 }
-button {
+.estilos-botones-home{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 15px;
     font-weight: 500;
     background-color: rgb(52, 77, 103);
@@ -31,7 +35,7 @@ button {
     border-radius: 3px;
     border: none;
 }
-button:hover {
+.estilos-botones-home:hover {
     background-color: rgb(110, 204, 175);
     color: rgb(52, 77, 103);
     width: 95px;

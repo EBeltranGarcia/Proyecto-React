@@ -32,7 +32,8 @@ img {
     margin-top: 25px;
     text-align: center;
 }
-button {
+.boton-visible {
+    display: block;
     background-color: rgb(110, 204, 175);
     color: rgb(52, 77, 103);
     font-weight: 500;
@@ -47,7 +48,4 @@ button {
 }
 .boton-oculto {
     display: none;
-}
-.boton-visible {
-    display: block;
 }

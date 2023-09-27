@@ -41,6 +41,11 @@ li:last-child {
     border-bottom-right-radius: 5px;
 }
 #boton-infocard {
+    position: relative;
+    background-color: rgb(110, 204, 175);
+    color: rgb(52, 77, 103);
+    border: none;
+    border-radius: 5px;
     left: 270px;
     bottom: 8px;
     width: 50px;
