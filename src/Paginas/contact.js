@@ -8,7 +8,7 @@ import Navegacion from "../Componentes/navegacion";
 function Contact() {
     return (
         <div>
-            <Navegacion />
+            <Navegacion ubicacionPagina="Contact"/>
             <div id= "contenedor-formulario">
                 <form className="caja-formulario" action="https://formspree.io/f/xknlqpld" method="post">
                     <h3 className="titulos-formulario">Contact</h3>

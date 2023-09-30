@@ -106,7 +106,7 @@ function Characters() {
 
     return(
             <div>
-                <Navegacion/>
+                <Navegacion ubicacionPagina="Characters"/>
                 <div>
                     <h2 id="titulo-filtros">Filters</h2>
                     <form className="d-flex justify-content-around flex-wrap">

@@ -12,8 +12,8 @@ function Router() {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Home/>}/>
-                <Route  path="/characters" element={<Characters/>}/>
-                <Route path="contact" element={<Contact/>}/>
+                <Route  path="/Characters" element={<Characters/>}/>
+                <Route path="Contact" element={<Contact/>}/>
             </Routes>
         </BrowserRouter>
     )

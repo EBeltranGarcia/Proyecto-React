@@ -17,8 +17,8 @@ function Home() {
                 <p className="texto-home">Also you can filter for diferent types of properties to find the character that you are looking for or send us a massage for any concern o sugestion.</p>
                 <h3>Lets go!</h3>
                 <div className='botones-home'>
-                    <Link to="/characters" className='estilos-botones-home'>Characters</Link>
-                    <Link to="/contact" className='estilos-botones-home'>Contact</Link>
+                    <Link to="/Characters" className='estilos-botones-home'>Characters</Link>
+                    <Link to="/Contact" className='estilos-botones-home'>Contact</Link>
                 </div>
             </div>
     )

@@ -5,15 +5,15 @@ import {Link} from 'react-router-dom';
 //componentes
 
 
-function Navegacion () {
+function Navegacion ({ubicacionPagina}) {
     return(
         <nav>
             <div>
                 <Link to="/" className="boton-inicio">Rick & Morty</Link>
             </div>
             <div id="titulos-navegacion">    
-                <Link to="/characters" className="paginas-navegacion">Characters</Link>
-                <Link to="/contact" className="paginas-navegacion">contact</Link>
+                <Link to="/Characters" id="estilos-characters" className={ubicacionPagina === "Characters" ? "fondo-activado" : ""}>Characters</Link>
+                <Link to="/Contact" id="estilos-contact" className={ubicacionPagina === "Contact" ? "fondo-activado" : ""}>Contact</Link>
             </div>
         </nav>
     )
