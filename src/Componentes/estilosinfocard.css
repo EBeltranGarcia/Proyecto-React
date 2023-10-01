@@ -57,13 +57,12 @@ li:last-child {
 
 @media (max-width:900px) {
     #contenedor-infocards {
-        position: relative;
         width: 320px;
-        top: -30px;
         left: -13px;
+        bottom: 10px;
     }
     #boton-infocard {
         left: 273px;
-        bottom: 365px;
+        bottom: 400px;
     }
 }
