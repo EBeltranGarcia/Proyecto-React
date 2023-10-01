@@ -11,9 +11,17 @@ function Navegacion ({ubicacionPagina}) {
             <div>
                 <Link to="/" className="boton-inicio">Rick & Morty</Link>
             </div>
-            <div id="titulos-navegacion">    
-                <Link to="/Characters" id="estilos-characters" className={ubicacionPagina === "Characters" ? "fondo-activado" : ""}>Characters</Link>
-                <Link to="/Contact" id="estilos-contact" className={ubicacionPagina === "Contact" ? "fondo-activado" : ""}>Contact</Link>
+            <div id="titulos-navegacion">
+                <div className="menu">
+                    <ul>
+                        <li>
+                            <Link id="estilos-characters" to="/Characters" className={ubicacionPagina === "Characters" ? "fondo-activado" : ""}>Characters</Link>
+                        </li>
+                        <li>
+                            <Link id="estilos-contact" to="/Contact" className={ubicacionPagina === "Contact" ? "fondo-activado" : ""}>Contact</Link>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     )

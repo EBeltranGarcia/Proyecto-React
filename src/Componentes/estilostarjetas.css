@@ -13,7 +13,7 @@
     background-color: rgb(21, 41, 65);
     border-radius: 10px;
 }
-img {
+.imagen-original, .imagen-abierta {
     position: relative;
     left: 10px;
     top: 8px;
@@ -22,7 +22,7 @@ img {
     color: rgb(110, 204, 175);
     font-weight: 500;
     font-size: 30px;
-    margin-top: 7px;
+    margin-top: 10px;
     text-align: center;
 }
 .texto-abierto {
@@ -48,4 +48,22 @@ img {
 }
 .boton-oculto {
     display: none;
+}
+
+@media (max-width:900px) {
+    .contenedor-tarjetas2 {
+        position: relative;
+        width: 320px;
+        height: 720px;
+        background-color: rgb(21, 41, 65);
+        border-radius: 10px;
+    }
+    .imagen-abierta {
+        position: relative;
+        top: 48px;
+        left: 10px;
+    }
+    .texto-abierto {
+        margin-top: 60px;
+    }
 }

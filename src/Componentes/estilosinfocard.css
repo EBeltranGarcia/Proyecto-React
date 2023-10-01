@@ -21,10 +21,10 @@
     list-style: none;
     font-weight: 700;
     padding: 2px;
-    border: 1px solid rgba(128, 128, 128, 0.24);
+    border: 1px solid rgba(99, 97, 97, 0.24);
 }
 #contenedor-status {
-    border: 1px solid rgba(128, 128, 128, 0.24);
+    border: 1px solid rgba(99, 97, 97, 0.24);
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
 }
@@ -53,4 +53,17 @@ li:last-child {
     font-size: 20px;
     font-weight: 500;
     padding-bottom: 33px;
-}   
+}
+
+@media (max-width:900px) {
+    #contenedor-infocards {
+        position: relative;
+        width: 320px;
+        top: -30px;
+        left: -13px;
+    }
+    #boton-infocard {
+        left: 273px;
+        bottom: 365px;
+    }
+}

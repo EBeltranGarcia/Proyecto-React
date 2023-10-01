@@ -116,7 +116,7 @@ function Characters() {
                 <section>
                     {personajes.length > 0 ? personajes.map((personaje)=> { return <Tarjeta key={personaje.id} infoPersonaje={personaje}/>}) : 
                     <div className="mensaje-alerta">
-                        <i class="bi bi-exclamation-triangle-fill"></i>
+                        <i className="bi bi-exclamation-triangle-fill"></i>
                         <p>Sorry! There are no characters with all those properties.</p>
                     </div>
                     }

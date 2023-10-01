@@ -9,7 +9,7 @@ function Contact() {
     return (
         <div>
             <Navegacion ubicacionPagina="Contact"/>
-            <div id= "contenedor-formulario">
+            <div id="contenedor-formulario">
                 <form className="caja-formulario" action="https://formspree.io/f/xknlqpld" method="post">
                     <h3 className="titulos-formulario">Contact</h3>
                     <h3 className="titulos-formulario">Leave us your information so we can contact you</h3>
