@@ -1,5 +1,5 @@
 //hoja con estilos
-import "./estilosnavegacion.css"
+import "./estilosnavegacion.css";
 //paquetes-modulos
 import {Link} from 'react-router-dom';
 //componentes

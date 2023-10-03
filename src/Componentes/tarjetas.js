@@ -1,5 +1,5 @@
 //hoja con estilos
-import "./estilostarjetas.css"
+import "./estilostarjetas.css";
 //paquetes-modulos
 import { useState } from "react";
 //componentes

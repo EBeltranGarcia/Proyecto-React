@@ -1,7 +1,7 @@
 //hoja con estilos
-import "./estiloscharacters.css"
+import "./estiloscharacters.css";
 //paquetes-modulos
-import {useState, useEffect} from "react";
+import {useState, useEffect, Fragment} from "react";
 //componentes
 import Navegacion from "../Componentes/navegacion";
 import Tarjeta from "../Componentes/tarjetas";
@@ -58,11 +58,10 @@ function Characters() {
             setFiltrosAplicados(filtrosRestantes)
             
             setPersonajes(listaCompleta)
-            }
-            
-            //console.log(personajes)
-            
         }
+            //console.log(personajes)
+    }
+
         //console.log(event.target.id)
         //console.dir(event.target.checked)
 
@@ -102,27 +101,27 @@ function Characters() {
             }
             setPersonajes(resultado)
         })
+        
     },[filtrosAplicados])
 
     return(
+        <Fragment>
+            <Navegacion ubicacionPagina="Characters"/>
             <div>
-                <Navegacion ubicacionPagina="Characters"/>
-                <div>
-                    <h2 id="titulo-filtros">Filters</h2>
-                    <form className="d-flex justify-content-around flex-wrap">
-                        {listaFiltros.map((item)=>{ return <Filters key={item.nombre} nombreFiltros={item.filtro} idFiltros={item.nombre} handlerChange={aplicarFiltros} />})}
-                    </form>
-                </div>
-                <section>
-                    {personajes.length > 0 ? personajes.map((personaje)=> { return <Tarjeta key={personaje.id} infoPersonaje={personaje}/>}) : 
-                    <div className="mensaje-alerta">
-                        <i className="bi bi-exclamation-triangle-fill"></i>
-                        <p>Sorry! There are no characters with all those properties.</p>
-                    </div>
-                    }
-                    
-                </section>
+                <h2 id="titulo-filtros">Filters</h2>
+                <form className="d-flex justify-content-around flex-wrap">
+                    {listaFiltros.map((item)=>{ return <Filters key={item.nombre} nombreFiltros={item.filtro} idFiltros={item.nombre} handlerChange={aplicarFiltros} />})}
+                </form>
             </div>
+            <main>
+                {personajes.length > 0 ? personajes.map((personaje)=> { return <Tarjeta key={personaje.id} infoPersonaje={personaje}/>}) : 
+                <div className="mensaje-alerta">
+                    <i className="bi bi-exclamation-triangle-fill"></i>
+                    <p>Sorry! There are no characters with all those properties.</p>
+                </div>
+                }
+            </main>
+        </Fragment>
     )
 }
 

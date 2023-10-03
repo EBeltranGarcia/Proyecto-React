@@ -1,13 +1,13 @@
 //hoja con estilos
-import "./estiloscontact.css"
+import "./estiloscontact.css";
 //paquetes-modulos
-
+import { Fragment } from "react";
 //componentes
 import Navegacion from "../Componentes/navegacion";
 
 function Contact() {
     return (
-        <div>
+        <Fragment>
             <Navegacion ubicacionPagina="Contact"/>
             <div id="contenedor-formulario">
                 <form className="caja-formulario" action="https://formspree.io/f/xknlqpld" method="post">
@@ -33,7 +33,7 @@ function Contact() {
                     <input id= "boton-enviar"type="submit" value="Send"/>
                 </form>
             </div>    
-        </div>
+        </Fragment>
     )
 }
 

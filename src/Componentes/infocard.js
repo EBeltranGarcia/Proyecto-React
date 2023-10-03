@@ -1,12 +1,11 @@
 //hoja con estilos
-import "./estilosinfocard.css"
+import "./estilosinfocard.css";
 //paquetes-modulos
 
 //componentes
 
 
 function Infocards({estado, especie, origen, genero, setMostrar}) {
-    
     return(
         <div id="contenedor-infocards">
             <div>

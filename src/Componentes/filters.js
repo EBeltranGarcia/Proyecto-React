@@ -1,5 +1,5 @@
 //hoja con estilos
-import "./estilosfilters.css"
+import "./estilosfilters.css";
 //paquetes-modulos
 
 //componentes
